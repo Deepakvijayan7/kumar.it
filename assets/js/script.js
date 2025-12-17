@@ -1,18 +1,18 @@
 
-     $( document ).ready(function() {
+$(document).ready(function () {
 
 
-  window.addEventListener('scroll', function() {
-  const header = document.querySelector('#top_header');
-  const scrollPosition = window.scrollY;
-  const hideThreshold = 80; // Adjust this value to hide the element after scrolling 200px
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('#top_header');
+    const scrollPosition = window.scrollY;
+    const hideThreshold = 80; // Adjust this value to hide the element after scrolling 200px
 
-  if (scrollPosition > hideThreshold) {
-   $('#top_header').slideUp(450);
-  } else {
-   $('#top_header').slideDown(450);
-  }
-});
+    if (scrollPosition > hideThreshold) {
+      $('#top_header').slideUp(450);
+    } else {
+      $('#top_header').slideDown(450);
+    }
+  });
 
 
   window.onscroll = function () { myFunction() };
@@ -29,6 +29,4 @@
   }
 
 
-
 });
-  
