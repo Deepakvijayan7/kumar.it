@@ -2,6 +2,8 @@
 $(document).ready(function () {
 
 
+
+
   window.addEventListener('scroll', function () {
     const header = document.querySelector('#top_header');
     const scrollPosition = window.scrollY;
@@ -9,24 +11,11 @@ $(document).ready(function () {
 
     if (scrollPosition > hideThreshold) {
       $('#top_header').slideUp(450);
+      // $('.navbar-custom').addClass('fixed-header-class')
     } else {
       $('#top_header').slideDown(450);
+      // $('.navbar-custom').removeClass('fixed-header-class')
     }
   });
-
-
-  window.onscroll = function () { myFunction() };
-
-  function myFunction() {
-    var testDivFromTop = document.getElementById("div").offsetTop + 50;
-    var pageHeight = window.innerHeight;
-    if (document.body.scrollTop > testDivFromTop - pageHeight || document.documentElement.scrollTop > testDivFromTop - pageHeight) {
-
-      $('#counter').addClass('counter');
-      $('#counter1').addClass('counter');
-      $('#counter2').addClass('counter');
-    }
-  }
-
 
 });
